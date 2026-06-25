@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>採用情報｜綾目精機株式会社｜精密金属部品加工（広島県府中市）</title>
+<meta name="description" content="綾目精機株式会社の採用サイト。創業50年超の安定企業で、精密金属部品加工の製造オペレーター・法人営業を募集中。未経験歓迎、丁寧な指導でプロに成長できます。広島県府中市。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue-deep:#154F96;
+  --blue:#1E6FC0;
+  --blue-mid:#2E8BD6;
+  --blue-light:#6FB7E8;
+  --blue-pale:#EAF4FC;
+  --green:#3DA535;
+  --green-deep:#2F8A2A;
+  --ink:#1B2430;
+  --gray:#5A6573;
+  --line:#E3E8EE;
+  --bg-soft:#F4F8FC;
+  --orange:#F4B233;
+  --teal:#4FB0A5;
+  --coral:#E8806B;
+  --navy:#2E3A8C;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans JP",sans-serif;color:var(--ink);background:#fff;line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.en{font-family:"Oswald",sans-serif;letter-spacing:.06em}
+
+/* ---------- Header ---------- */
+header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo .mark{font-family:"Oswald",sans-serif;font-weight:700;font-size:30px;color:var(--green);letter-spacing:.04em;line-height:1}
+.logo .jp{font-weight:700;font-size:15px;color:var(--ink);border-left:2px solid var(--line);padding-left:12px}
+.gnav{display:flex;align-items:center;gap:26px}
+.gnav a{font-size:14px;font-weight:500;color:var(--ink);transition:color .2s}
+.gnav a:hover{color:var(--blue)}
+.gnav .cta{background:var(--green);color:#fff;padding:10px 20px;border-radius:6px;font-weight:700;box-shadow:0 4px 12px rgba(61,165,53,.28)}
+.gnav .cta:hover{color:#fff;background:var(--green-deep)}
+.menu-btn{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px}
+.menu-btn span{width:26px;height:2px;background:var(--ink);display:block}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;background:linear-gradient(180deg,#fff 0%,var(--blue-pale) 100%);overflow:hidden;padding-top:54px}
+.hero .wave-top{position:absolute;top:0;left:0;width:100%;line-height:0}
+.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:30px 0 90px}
+.hero-copy .badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.badge{font-size:12.5px;font-weight:700;padding:6px 14px;border-radius:30px;background:#fff;color:var(--blue-deep);border:1.5px solid var(--blue-light)}
+.badge.g{color:var(--green-deep);border-color:#A9D9A4}
+.hero-copy h1{font-size:46px;font-weight:900;line-height:1.32;letter-spacing:.01em;margin-bottom:20px}
+.hero-copy h1 .accent{color:var(--blue)}
+.hero-copy h1 .u{background:linear-gradient(transparent 66%,rgba(61,165,53,.28) 66%)}
+.hero-copy p.lead{font-size:16px;color:var(--gray);margin-bottom:30px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;font-weight:700;padding:15px 30px;border-radius:8px;font-size:15px;transition:transform .15s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:linear-gradient(135deg,var(--blue) 0%,var(--blue-deep) 100%);color:#fff;box-shadow:0 8px 22px rgba(30,111,192,.32)}
+.btn-tel{background:#fff;color:var(--blue-deep);border:1.5px solid var(--blue-light)}
+.btn-tel small{display:block;font-size:11px;color:var(--gray);font-weight:500}
+.hero-visual{position:relative}
+.hero-visual .photo{border-radius:18px;overflow:hidden;box-shadow:0 24px 50px rgba(21,79,150,.22);aspect-ratio:4/3;background:#dfeaf4}
+.hero-visual .photo img{width:100%;height:100%;object-fit:cover}
+.hero-visual .tag{position:absolute;left:-18px;bottom:-18px;background:#fff;border-radius:14px;padding:14px 20px;box-shadow:0 12px 30px rgba(21,79,150,.2);display:flex;align-items:center;gap:12px}
+.hero-visual .tag .n{font-family:"Oswald",sans-serif;font-size:34px;font-weight:700;color:var(--green);line-height:1}
+.hero-visual .tag .t{font-size:12px;color:var(--gray);font-weight:500}
+
+/* ---------- Belief / values bar ---------- */
+.belief{background:#fff;padding:70px 0 30px;text-align:center}
+.belief .three{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:8px}
+.belief .three .v{font-family:"Oswald",sans-serif;font-weight:700;font-size:22px;color:var(--blue-deep)}
+.belief .three .plus{color:var(--green);font-size:22px;font-weight:700}
+.belief h2.cn{font-size:30px;font-weight:900;margin:18px 0 14px}
+.belief p{color:var(--gray);max-width:680px;margin:0 auto;font-size:15.5px}
+
+/* ---------- Section common ---------- */
+section{scroll-margin-top:80px}
+.sec{padding:84px 0}
+.sec.soft{background:var(--bg-soft)}
+.sec-head{text-align:center;margin-bottom:50px}
+.sec-head .en-l{display:block;font-family:"Oswald",sans-serif;color:var(--blue-light);font-size:15px;font-weight:600;letter-spacing:.18em;margin-bottom:6px}
+.sec-head h2{font-size:32px;font-weight:900;letter-spacing:.02em}
+.sec-head h2 .bar{color:var(--green)}
+.sec-head p{color:var(--gray);margin-top:14px;font-size:15px}
+
+/* ---------- Numbers ---------- */
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.num{background:#fff;border:1px solid var(--line);border-radius:14px;padding:30px 18px;text-align:center;position:relative;overflow:hidden}
+.num::before{content:"";position:absolute;top:0;left:0;width:100%;height:4px;background:linear-gradient(90deg,var(--blue),var(--green))}
+.num .v{font-family:"Oswald",sans-serif;font-weight:700;color:var(--blue-deep);font-size:46px;line-height:1}
+.num .v small{font-size:18px;font-weight:600;margin-left:2px}
+.num .l{font-size:13.5px;color:var(--gray);margin-top:10px;font-weight:500}
+
+/* ---------- Jobs ---------- */
+.jobs{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.job{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.job:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(21,79,150,.12)}
+.job .top{padding:26px 28px;background:linear-gradient(135deg,var(--blue) 0%,var(--blue-deep) 100%);color:#fff}
+.job.green .top{background:linear-gradient(135deg,#4DB343 0%,var(--green-deep) 100%)}
+.job .top .cat{font-size:12px;font-weight:700;opacity:.9;letter-spacing:.08em}
+.job .top h3{font-size:23px;font-weight:900;margin-top:6px}
+.job .body{padding:24px 28px 28px;flex:1;display:flex;flex-direction:column}
+.job .body .desc{font-size:14.5px;color:var(--gray);margin-bottom:18px}
+.job .tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:20px}
+.job .tags span{font-size:12px;background:var(--blue-pale);color:var(--blue-deep);padding:4px 11px;border-radius:20px;font-weight:600}
+.job.green .tags span{background:#EAF6E9;color:var(--green-deep)}
+.job .meta{border-top:1px dashed var(--line);padding-top:16px;margin-top:auto}
+.job .meta .row{display:flex;justify-content:space-between;font-size:14px;padding:5px 0}
+.job .meta .row b{color:var(--ink);font-weight:700}
+.job .meta .row .pay{font-family:"Oswald",sans-serif;font-size:18px;color:var(--green);font-weight:700}
+
+/* ---------- Reasons / merits ---------- */
+.merits{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.merit{background:#fff;border-radius:16px;padding:32px 26px;border:1px solid var(--line)}
+.merit .ic{width:54px;height:54px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-family:"Oswald",sans-serif;font-weight:700;color:#fff;font-size:22px;margin-bottom:16px}
+.merit h4{font-size:18px;font-weight:700;margin-bottom:10px}
+.merit p{font-size:14px;color:var(--gray)}
+.welfare{margin-top:34px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px 32px}
+.welfare h4{font-size:16px;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.welfare h4::before{content:"";width:6px;height:20px;background:var(--green);border-radius:3px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips span{font-size:13.5px;background:var(--bg-soft);border:1px solid var(--line);padding:8px 15px;border-radius:8px;color:var(--ink);font-weight:500}
+
+/* ---------- Requirements table ---------- */
+.tabs{display:flex;gap:10px;justify-content:center;margin-bottom:28px;flex-wrap:wrap}
+.tab{padding:11px 26px;border-radius:30px;border:1.5px solid var(--line);background:#fff;font-weight:700;font-size:14.5px;cursor:pointer;transition:.2s}
+.tab.active{background:var(--blue);color:#fff;border-color:var(--blue)}
+.req{display:none;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.req.active{display:block}
+.req table{width:100%;border-collapse:collapse}
+.req th,.req td{padding:18px 22px;text-align:left;border-bottom:1px solid var(--line);font-size:14.5px;vertical-align:top}
+.req th{background:var(--bg-soft);width:180px;font-weight:700;color:var(--ink)}
+.req tr:last-child th,.req tr:last-child td{border-bottom:none}
+.req td .pay{font-family:"Oswald",sans-serif;font-size:20px;color:var(--green-deep);font-weight:700}
+
+/* ---------- Flow ---------- */
+.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:step}
+.step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px 26px;position:relative}
+.step .no{font-family:"Oswald",sans-serif;font-size:14px;font-weight:700;color:#fff;background:var(--blue);width:auto;display:inline-block;padding:3px 14px;border-radius:20px;letter-spacing:.1em;margin-bottom:14px}
+.step h4{font-size:17px;font-weight:700;margin-bottom:8px}
+.step p{font-size:13.5px;color:var(--gray)}
+
+/* ---------- Company ---------- */
+.company table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.company th,.company td{padding:16px 22px;text-align:left;border-bottom:1px solid var(--line);font-size:14.5px}
+.company th{background:var(--bg-soft);width:200px;font-weight:700}
+.company tr:last-child th,.company tr:last-child td{border-bottom:none}
+
+/* ---------- CTA ---------- */
+.cta-band{background:linear-gradient(135deg,var(--blue-deep) 0%,var(--blue) 55%,var(--blue-mid) 100%);color:#fff;text-align:center;padding:74px 0;position:relative;overflow:hidden}
+.cta-band h2{font-size:32px;font-weight:900;margin-bottom:12px}
+.cta-band p{opacity:.92;margin-bottom:30px;font-size:15.5px}
+.cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.cta-actions .btn-primary{background:var(--green);box-shadow:0 8px 22px rgba(0,0,0,.2)}
+.cta-actions .btn-primary:hover{background:var(--green-deep)}
+.cta-actions .btn-white{background:#fff;color:var(--blue-deep)}
+.cta-actions .btn-white small{display:block;font-size:11px;color:var(--gray);font-weight:500}
+
+/* ---------- Footer ---------- */
+footer{background:#16202C;color:#cdd6e0;padding:50px 0 26px}
+.ft-top{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:flex-start}
+.ft-logo .mark{font-family:"Oswald",sans-serif;font-weight:700;font-size:26px;color:#5BC551;letter-spacing:.04em}
+.ft-logo p{font-size:13px;color:#9aa7b5;margin-top:10px;line-height:1.9}
+.ft-nav{display:flex;gap:28px;flex-wrap:wrap}
+.ft-nav a{font-size:13.5px;color:#cdd6e0}
+.ft-nav a:hover{color:#fff}
+.copy{border-top:1px solid #2b3845;margin-top:34px;padding-top:20px;font-size:12px;color:#7b8896;text-align:center}
+
+/* ---------- Responsive ---------- */
+@media(max-width:880px){
+  .gnav{display:none}
+  .menu-btn{display:flex}
+  .hero-inner{grid-template-columns:1fr;gap:36px;padding-bottom:70px}
+  .hero-copy h1{font-size:34px}
+  .nums{grid-template-columns:1fr 1fr}
+  .jobs{grid-template-columns:1fr}
+  .merits{grid-template-columns:1fr}
+  .flow{grid-template-columns:1fr}
+  .sec{padding:60px 0}
+  .req th{width:120px}
+  .company th{width:130px}
+}
+@media(max-width:480px){
+  .hero-copy h1{font-size:28px}
+  .sec-head h2{font-size:25px}
+  .num .v{font-size:38px}
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="wrap hd">
+    <a href="#top" class="logo">
+      <span class="mark">AYAME</span>
+      <span class="jp">綾目精機 株式会社</span>
+    </a>
+    <nav class="gnav">
+      <a href="#jobs">募集職種</a>
+      <a href="#merits">働く魅力</a>
+      <a href="#req">募集要項</a>
+      <a href="#flow">選考の流れ</a>
+      <a href="#company">会社概要</a>
+      <a href="tel:0847415049" class="cta">📞 応募・お問い合わせ</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="メニュー"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="top">
+  <div class="wave-top">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none" style="width:100%;height:90px">
+      <path d="M0,40 C320,110 520,0 760,46 C1000,92 1180,20 1440,60 L1440,0 L0,0 Z" fill="#1E6FC0"/>
+      <path d="M0,60 C300,120 560,20 800,64 C1040,108 1220,40 1440,78 L1440,0 L0,0 Z" fill="#2E8BD6" opacity=".55"/>
+    </svg>
+  </div>
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <div class="badges">
+        <span class="badge">創業50年超の安定企業</span>
+        <span class="badge g">未経験歓迎</span>
+        <span class="badge">広島県府中市</span>
+      </div>
+      <h1>製品の未来を考えた、<br><span class="accent">「ものづくり」</span>を、<br><span class="u">あなたと。</span></h1>
+      <p class="lead">スピード・高品質・高精度。精密金属部品で社会を支える綾目精機で、ものづくりのプロへ。未経験からでも、丁寧な指導で着実に成長できます。</p>
+      <div class="hero-actions">
+        <a href="#jobs" class="btn btn-primary">募集職種を見る →</a>
+        <a href="tel:0847415049" class="btn btn-tel">📞 0847-41-5049<small>採用担当まで（平日 7:50–17:00）</small></a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="photo">
+        <img src="https://ayame-seiki.co.jp/img/p_service03.jpg" alt="精密金属部品加工の現場">
+      </div>
+      <div class="tag">
+        <span class="n">13<span style="font-size:18px">年</span></span>
+        <span class="t">平均勤続年数<br>長く働ける職場です</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Belief -->
+<div class="belief">
+  <div class="wrap">
+    <div class="three">
+      <span class="v">SPEED</span><span class="plus">＋</span>
+      <span class="v">HIGH-QUALITY</span><span class="plus">＋</span>
+      <span class="v">HIGHLY PRECISE</span>
+    </div>
+    <h2 class="cn">「スピード」「高品質」「高精度」</h2>
+    <p>お客様がいつ、どんな状況で、何にお使いになるのか。そこまで考えるのがものづくりのプロ。製品の未来まで見据えた仕事が、綾目精機の創造力です。その現場を、これから一緒につくる仲間を募集しています。</p>
+  </div>
+</div>
+
+<!-- Numbers -->
+<section class="sec soft">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en-l">NUMBERS</span>
+      <h2>数字で<span class="bar">見る</span>綾目精機</h2>
+      <p>働きやすさは、データにあらわれます。</p>
+    </div>
+    <div class="nums">
+      <div class="num"><div class="v">50<small>年超</small></div><div class="l">創業からの歴史<br>（設立1988年）</div></div>
+      <div class="num"><div class="v">13<small>年</small></div><div class="l">平均勤続年数<br>（2024年10月現在）</div></div>
+      <div class="num"><div class="v">15<small>日</small></div><div class="l">平均有給取得日数<br>（2023年度）</div></div>
+      <div class="num"><div class="v">110<small>日</small></div><div class="l">年間休日数<br>週休2日制</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Jobs -->
+<section class="sec" id="jobs">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en-l">RECRUIT</span>
+      <h2>募集<span class="bar">職種</span></h2>
+      <p>現在、2職種で積極採用中。どちらも未経験から活躍できます。</p>
+    </div>
+    <div class="jobs">
+      <div class="job">
+        <div class="top">
+          <span class="cat">製造職｜正社員</span>
+          <h3>精密部品加工スタッフ</h3>
+        </div>
+        <div class="body">
+          <p class="desc">ベアリング・ギア・自動車部品・産業機械部品向けの精密金属部品を、旋盤・研削・研磨などの機械加工でつくる仕事。入社後に丁寧に指導するので、未経験からでも安心してスタートできます。</p>
+          <div class="tags"><span>未経験OK</span><span>学歴不問</span><span>増員募集</span><span>マイカー通勤可</span></div>
+          <div class="meta">
+            <div class="row"><b>月給</b><span class="pay">189,600〜250,000円</span></div>
+            <div class="row"><b>想定年収</b><span>299〜375万円</span></div>
+            <div class="row"><b>勤務地</b><span>広島県府中市河面町</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="job green">
+        <div class="top">
+          <span class="cat">営業職｜正社員</span>
+          <h3>精密金属部品の提案営業</h3>
+        </div>
+        <div class="body">
+          <p class="desc">工作機械・産業機械・車輛メーカーへの精密部品の提案・見積もり・受注を担当。技術部門と連携した課題解決型の営業です。まずは製品知識の習得から。技術担当と同行しながら一人前を目指せます。</p>
+          <div class="tags"><span>未経験歓迎</span><span>学歴不問</span><span>技術×営業</span><span>普通免許必須</span></div>
+          <div class="meta">
+            <div class="row"><b>月給</b><span class="pay">200,000〜300,000円</span></div>
+            <div class="row"><b>想定年収</b><span>300〜450万円</span></div>
+            <div class="row"><b>勤務地</b><span>広島県府中市河面町</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Merits -->
+<section class="sec soft" id="merits">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en-l">WHY AYAME</span>
+      <h2>綾目精機で<span class="bar">働く魅力</span></h2>
+    </div>
+    <div class="merits">
+      <div class="merit">
+        <div class="ic" style="background:var(--blue)">01</div>
+        <h4>未経験から、プロに育つ</h4>
+        <p>入社後は先輩がマンツーマンで丁寧に指導。研修制度（スキルアップ支援）もあり、知識ゼロからでも着実に技術を身につけられます。</p>
+      </div>
+      <div class="merit">
+        <div class="ic" style="background:var(--green)">02</div>
+        <h4>創業50年超の安定基盤</h4>
+        <p>設立1988年、日創グループの一員。平均勤続13年が示すとおり、腰を据えて長く働ける環境が整っています。</p>
+      </div>
+      <div class="merit">
+        <div class="ic" style="background:var(--orange)">03</div>
+        <h4>暮らしを支える働き方</h4>
+        <p>年間休日110日・週休2日制、残業代全額支給、退職金制度、1食210円の食事補助など、毎日の働きやすさを大切にしています。</p>
+      </div>
+    </div>
+    <div class="welfare">
+      <h4>福利厚生・待遇</h4>
+      <div class="chips">
+        <span>社会保険完備</span><span>交通費支給（上限あり）</span><span>残業代全額支給</span>
+        <span>退職金制度</span><span>賞与年2回（7月・12月）</span><span>昇給年1回（6月）</span>
+        <span>食事補助（1食210円で昼食）</span><span>定期健康診断</span><span>研修制度</span>
+        <span>育児・介護休業制度</span><span>年次有給休暇</span><span>親会社持株会制度</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Requirements -->
+<section class="sec" id="req">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en-l">REQUIREMENTS</span>
+      <h2>募集<span class="bar">要項</span></h2>
+    </div>
+    <div class="tabs">
+      <div class="tab active" data-t="t1">精密部品加工スタッフ</div>
+      <div class="tab" data-t="t2">提案営業</div>
+    </div>
+    <div class="req active" id="t1">
+      <table>
+        <tr><th>雇用形態</th><td>正社員（試用期間6ヶ月／条件変更なし）</td></tr>
+        <tr><th>仕事内容</th><td>精密金属部品の製造（ベアリング・ギア・自動車部品・産業機械部品向け精密小物など）および機械加工（旋盤加工・研削加工・研磨加工）。安定的な生産体制の維持・強化に向けた増員募集です。</td></tr>
+        <tr><th>応募資格</th><td>学歴不問／未経験OK。普通自動車免許（AT限定可）歓迎、製造・工場での作業経験があれば尚可。</td></tr>
+        <tr><th>給与</th><td><span class="pay">月給 189,600円〜250,000円</span><br>想定年収 299〜375万円／昇給年1回（6月）／賞与年2回（7月・12月）／残業代全額支給／退職金制度あり</td></tr>
+        <tr><th>勤務時間</th><td>7:50〜17:00（休憩70分、実働8時間）／変形労働制／残業 月平均20時間程度</td></tr>
+        <tr><th>休日・休暇</th><td>週休2日制（原則土日休み、年5回土曜出勤あり）・祝日出勤あり／年間休日110日／GW・夏季・年末年始休暇／慶弔・産前産後・介護休暇／年次有給休暇</td></tr>
+        <tr><th>勤務地</th><td>広島県府中市河面町811（本社工場）</td></tr>
+      </table>
+    </div>
+    <div class="req" id="t2">
+      <table>
+        <tr><th>雇用形態</th><td>正社員（試用期間6ヶ月／条件変更なし）</td></tr>
+        <tr><th>仕事内容</th><td>精密金属部品を製造・販売する当社にて、既存・新規の法人顧客への提案営業。見積もり・受注、関係深耕、新規開拓（展示会・訪問）、技術部門と連携した課題解決提案、納期管理・顧客フォローまで。営業体制の強化に向けた増員募集です。</td></tr>
+        <tr><th>応募資格</th><td>学歴不問／未経験OK。普通自動車免許（AT限定可）必須、法人営業経験があれば尚可。製造業・ものづくりに興味がある方歓迎。</td></tr>
+        <tr><th>給与</th><td><span class="pay">月給 200,000円〜300,000円</span><br>想定年収 300〜450万円／昇給年1回（6月）／賞与年2回（7月・12月）／残業代全額支給／退職金制度あり</td></tr>
+        <tr><th>勤務時間</th><td>7:50〜17:00（休憩70分、実働8時間）／変形労働制／残業 月平均10〜20時間程度</td></tr>
+        <tr><th>休日・休暇</th><td>週休2日制（原則土日休み、年5回土曜出勤あり）・祝日出勤あり／年間休日110日／GW・夏季・年末年始休暇／慶弔・産前産後・介護休暇／年次有給休暇</td></tr>
+        <tr><th>勤務地</th><td>広島県府中市河面町811（本社工場）</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Flow -->
+<section class="sec soft" id="flow">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en-l">FLOW</span>
+      <h2>選考の<span class="bar">流れ</span></h2>
+      <p>お電話一本から。内定まで最短2週間、スピーディに対応します。</p>
+    </div>
+    <div class="flow">
+      <div class="step"><span class="no">STEP 01</span><h4>お電話・ご応募</h4><p>採用担当（0847-41-5049）までお気軽にご連絡ください。ご応募後、担当者よりご連絡し書類選考を行います。</p></div>
+      <div class="step"><span class="no">STEP 02</span><h4>一次面接・工場見学</h4><p>現場責任者との面談に加え、実際の工場をご見学いただけます。職場の雰囲気を見てから判断できます。</p></div>
+      <div class="step"><span class="no">STEP 03</span><h4>内定・入社手続き</h4><p>選考通過後、内定のご連絡と入社手続きへ。入社後は丁寧な指導で安心してスタートできます。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Company -->
+<section class="sec company" id="company">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en-l">COMPANY</span>
+      <h2>会社<span class="bar">概要</span></h2>
+    </div>
+    <table>
+      <tr><th>会社名</th><td>綾目精機株式会社（本社工場）</td></tr>
+      <tr><th>設立</th><td>1988年（創業50年超）</td></tr>
+      <tr><th>事業内容</th><td>精密金属部品の製造（工作機械部品、産業機械部品、車輛部品などの精密部品）および機械加工（旋盤加工・マシニング加工・研削加工・研磨加工）</td></tr>
+      <tr><th>所在地</th><td>〒726-0036 広島県府中市河面町811</td></tr>
+      <tr><th>TEL / FAX</th><td>TEL 0847-41-5049 ／ FAX 0847-41-6323</td></tr>
+      <tr><th>設備</th><td>NC旋盤・MC（マシニングセンタ）・研磨機・NCフライス盤・汎用旋盤 ほか</td></tr>
+      <tr><th>グループ</th><td>日創グループ（日創プロニティ株式会社）</td></tr>
+      <tr><th>企業サイト</th><td><a href="https://ayame-seiki.co.jp/" target="_blank" rel="noopener" style="color:var(--blue);font-weight:600">https://ayame-seiki.co.jp/ ↗</a></td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="wrap">
+    <h2>まずは、お電話一本から。</h2>
+    <p>「話だけ聞いてみたい」「工場を見てみたい」も歓迎です。あなたのご応募をお待ちしています。</p>
+    <div class="cta-actions">
+      <a href="tel:0847415049" class="btn btn-white">📞 0847-41-5049<small>採用担当まで（平日 7:50–17:00）</small></a>
+      <a href="https://ayame-seiki.co.jp/contact.html" target="_blank" rel="noopener" class="btn btn-primary">フォームで問い合わせ →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="wrap">
+    <div class="ft-top">
+      <div class="ft-logo">
+        <span class="mark">AYAME</span>
+        <p>綾目精機株式会社<br>〒726-0036 広島県府中市河面町811<br>TEL 0847-41-5049 ／ FAX 0847-41-6323</p>
+      </div>
+      <nav class="ft-nav">
+        <a href="#jobs">募集職種</a>
+        <a href="#merits">働く魅力</a>
+        <a href="#req">募集要項</a>
+        <a href="#flow">選考の流れ</a>
+        <a href="#company">会社概要</a>
+        <a href="https://ayame-seiki.co.jp/" target="_blank" rel="noopener">企業サイト ↗</a>
+      </nav>
+    </div>
+    <div class="copy">© AYAME SEIKI CO., LTD. ALL RIGHTS RESERVED.｜本ページは採用情報サイトです。</div>
+  </div>
+</footer>
+
+<script>
+// requirement tabs
+document.querySelectorAll('.tab').forEach(t=>{
+  t.addEventListener('click',()=>{
+    document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+    document.querySelectorAll('.req').forEach(x=>x.classList.remove('active'));
+    t.classList.add('active');
+    document.getElementById(t.dataset.t).classList.add('active');
+  });
+});
+// mobile menu -> jump to jobs / simple anchor reveal
+document.getElementById('menuBtn').addEventListener('click',()=>{
+  location.hash='#jobs';
+});
+</script>
+</body>
+</html>
