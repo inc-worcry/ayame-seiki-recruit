@@ -192,22 +192,51 @@ footer{background:#16202C;color:#cdd6e0;padding:50px 0 26px}
 
 /* ---------- Responsive ---------- */
 @media(max-width:880px){
-  .gnav{display:none}
+  .gnav{position:absolute;top:74px;left:0;width:100%;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0;padding:8px 0 14px;display:none;box-shadow:0 14px 26px rgba(0,0,0,.08)}
+  header.open .gnav{display:flex}
+  .gnav a{padding:14px 24px;font-size:15.5px;border-bottom:1px solid #f0f3f7}
+  .gnav .cta{margin:12px 24px 2px;text-align:center;box-shadow:none;border-radius:8px;border-bottom:none}
   .menu-btn{display:flex}
-  .hero-inner{grid-template-columns:1fr;gap:36px;padding-bottom:70px}
-  .hero-copy h1{font-size:34px}
+  header.open .menu-btn span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  header.open .menu-btn span:nth-child(2){opacity:0}
+  header.open .menu-btn span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .menu-btn span{transition:transform .25s,opacity .2s}
+  .hero-inner{grid-template-columns:1fr;gap:32px;padding-bottom:64px}
+  .hero-copy h1{font-size:33px}
+  .hero-visual{order:-1}
   .nums{grid-template-columns:1fr 1fr}
   .jobs{grid-template-columns:1fr}
   .merits{grid-template-columns:1fr}
   .flow{grid-template-columns:1fr}
-  .sec{padding:60px 0}
-  .req th{width:120px}
-  .company th{width:130px}
+  .sec{padding:58px 0}
+  .belief{padding:56px 0 20px}
+  .belief .three .v{font-size:17px}
+  .req th{width:116px}
+  .company th{width:118px}
 }
 @media(max-width:480px){
-  .hero-copy h1{font-size:28px}
-  .sec-head h2{font-size:25px}
-  .num .v{font-size:38px}
+  .wrap{padding:0 18px}
+  .logo .mark{font-size:25px}
+  .logo .jp{font-size:12.5px;padding-left:9px}
+  .hero{padding-top:40px}
+  .hero-copy h1{font-size:27px}
+  .hero-copy .badges{gap:6px}
+  .badge{font-size:11.5px;padding:5px 11px}
+  .hero-actions{flex-direction:column;align-items:stretch}
+  .btn{justify-content:center}
+  .sec-head h2{font-size:24px}
+  .num{padding:24px 12px}
+  .num .v{font-size:36px}
+  .belief h2.cn{font-size:24px}
+  .belief .three{gap:8px}
+  .belief .three .v{font-size:15px}
+  .belief .three .plus{font-size:15px}
+  .job .top h3{font-size:20px}
+  .req th,.req td,.company th,.company td{display:block;width:100%}
+  .req th,.company th{border-bottom:none;padding-bottom:4px}
+  .req td,.company td{padding-top:4px}
+  .cta-band h2{font-size:26px}
+  .cta-actions{flex-direction:column;align-items:stretch}
 }
 </style>
 </head>
@@ -418,8 +447,8 @@ footer{background:#16202C;color:#cdd6e0;padding:50px 0 26px}
       <p>お電話一本から。内定まで最短2週間、スピーディに対応します。</p>
     </div>
     <div class="flow">
-      <div class="step"><span class="no">STEP 01</span><h4>お電話・ご応募</h4><p>採用担当（0847-41-5049）までお気軽にご連絡ください。ご応募後、担当者よりご連絡し書類選考を行います。</p></div>
-      <div class="step"><span class="no">STEP 02</span><h4>一次面接・工場見学</h4><p>現場責任者との面談に加え、実際の工場をご見学いただけます。職場の雰囲気を見てから判断できます。</p></div>
+      <div class="step"><span class="no">STEP 01</span><h4>ご応募・エントリー</h4><p>採用担当（0847-41-5049）までお電話いただくか、下記「応募・お問い合わせ」リンクよりエントリーください。ご応募後、担当者よりご連絡し書類選考を行います。</p></div>
+      <div class="step"><span class="no">STEP 02</span><h4>一次面接</h4><p>現場責任者との面談に加え、実際の工場をご見学いただけます。職場の雰囲気を見てから判断できます。</p></div>
       <div class="step"><span class="no">STEP 03</span><h4>内定・入社手続き</h4><p>選考通過後、内定のご連絡と入社手続きへ。入社後は丁寧な指導で安心してスタートできます。</p></div>
     </div>
   </div>
@@ -434,7 +463,7 @@ footer{background:#16202C;color:#cdd6e0;padding:50px 0 26px}
     </div>
     <table>
       <tr><th>会社名</th><td>綾目精機株式会社（本社工場）</td></tr>
-      <tr><th>設立</th><td>1988年（創業50年超）</td></tr>
+      <tr><th>設立</th><td>1988年</td></tr>
       <tr><th>事業内容</th><td>精密金属部品の製造（工作機械部品、産業機械部品、車輛部品などの精密部品）および機械加工（旋盤加工・マシニング加工・研削加工・研磨加工）</td></tr>
       <tr><th>所在地</th><td>〒726-0036 広島県府中市河面町811</td></tr>
       <tr><th>TEL / FAX</th><td>TEL 0847-41-5049 ／ FAX 0847-41-6323</td></tr>
@@ -519,9 +548,13 @@ document.querySelectorAll('.tab').forEach(t=>{
     document.getElementById(t.dataset.t).classList.add('active');
   });
 });
-// mobile menu -> jump to jobs / simple anchor reveal
-document.getElementById('menuBtn').addEventListener('click',()=>{
-  location.hash='#jobs';
+// mobile dropdown menu
+var header=document.querySelector('header');
+document.getElementById('menuBtn').addEventListener('click',function(){
+  header.classList.toggle('open');
+});
+document.querySelectorAll('.gnav a').forEach(function(a){
+  a.addEventListener('click',function(){header.classList.remove('open');});
 });
 </script>
 </body>
